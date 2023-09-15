@@ -1,0 +1,13 @@
+version: "2"
+services:
+  infinispan-srv1:
+    container_name: infinispan-srv1
+    image: quay.io/infinispan/server:14.0
+    network_mode: host
+    environment:
+      USER: admin
+      PASS: admin
+    command:
+      - "-c infinispan.xml"
+    ports:
+      - 11222:11222
