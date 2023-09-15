@@ -10,7 +10,8 @@ public class Example {
     @ProtoField(number = 2)
     public String description;
 
-    public Example() {}
+    public Example() {
+    }
 
     public Example(String name) {
         this.name = name;
